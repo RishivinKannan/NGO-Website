@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://RishivinKannan.github.io/NGO-Website",
+  "homepage": "https://RishivinKannan.github.io/NGO-Website",
   "scripts": {
-    "deploy":"gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -15,7 +15,8 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",

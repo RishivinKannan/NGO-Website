@@ -1,25 +1,29 @@
-import Header from "./components/Header"
-import HeroSection from "./components/HeroSection"
-import Contact from "./components/contact.jsx"
-import About from "./components/About.jsx"
-import Blog from "./components/Blog.jsx"
-import Event from "./components/Event.jsx"
-import Project from "./components/Project.jsx"
-import Footer from "./components/Footer.jsx"
+
+import Home from "./pages/Home"
+import ProjectPage from "./pages/ProjectPage"
+import BlogPage from "./pages/BlogPage"
+import EventPage from "./pages/EventPage"
+import VolunteerPage from "./pages/VolunteerPage"
+
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
 
 function App() {
 
 
   return (
     <>
-      <Header/>
-      <HeroSection/>
-      <About/>
-      <Project/>
-      <Event/>
-      <Blog/>
-      <Contact/>
-      <Footer/>
+    
+      <BrowserRouter>
+        <Routes>
+            <Route index element={<Home/>}/>
+            <Route path="/projects" element={<ProjectPage/>}/>
+            <Route path="/blogs" element={<BlogPage/>}/>
+            <Route path="/events" element={<EventPage/>}/>
+            <Route path="/volunteer" element={<VolunteerPage/>}/>
+        </Routes>
+      </BrowserRouter>
+
     </>
   )
 }

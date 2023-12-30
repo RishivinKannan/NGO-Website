@@ -1,5 +1,5 @@
 import blogPhoto from "../assets/cause-1.jpg"
-
+import Header from "../components/Header";
 const blogs =[
     {
         "id":1,
@@ -22,15 +22,57 @@ const blogs =[
         "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
         "image":blogPhoto,
     },
+    {
+        "id":4,
+        "date":"Sept 10,2018",
+        "title":"Hurricane Irma has devastated Florida",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":blogPhoto,
+    },
+    {
+        "id":5,
+        "date":"Sept 10,2018",
+        "title":"Hurricane Irma has devastated Florida",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":blogPhoto,
+    },
+    {
+        "id":6,
+        "date":"Sept 10,2018",
+        "title":"Hurricane Irma has devastated Florida",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":blogPhoto,
+    },
+    {
+        "id":7,
+        "date":"Sept 10,2018",
+        "title":"Hurricane Irma has devastated Florida",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":blogPhoto,
+    },
+    {
+        "id":8,
+        "date":"Sept 10,2018",
+        "title":"Hurricane Irma has devastated Florida",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":blogPhoto,
+    },
+    {
+        "id":9,
+        "date":"Sept 10,2018",
+        "title":"Hurricane Irma has devastated Florida",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":blogPhoto,
+    },
 ];
-export default function Blog (){
+export default function BlogPage (){
     return(
         <>
-            
-            <div className="my-8 ml-0 lg:ml-14 mt-44">
-                <h3 className="mb-8 text-2xl font-bold text-center text-gray-900 trackinlg-tight lg:text-4xl lg:text-start">
-            Recent from blogs</h3>
-            <div className="mt-16 lg:grid-cols-3 lg:grid md:grid-cols-2 md:grid ">
+            <Header/>
+            <div className="pt-16 my-8 ml-14">
+                <h3 className="mb-8 text-2xl font-bold text-center text-gray-900 trackinlg-tight lg:text-4xl">
+            Blogs</h3>
+            <div className="mt-8 lg:grid-cols-3 lg:grid md:grid-cols-2 md:grid">
             {
                 blogs.map((blog)=>{
                     return(
@@ -48,14 +90,6 @@ export default function Blog (){
                 })
             }
             </div>
-               <div className="mt-12 ml-44 lg:mr-24 lg:float-right lg:ml-0 md:ml-96"> 
-                    <a
-                    href="/blogs"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                   More <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
             </div>
             
         </>

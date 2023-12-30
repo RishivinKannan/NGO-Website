@@ -3,12 +3,12 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About us', href: '#' },
-  { name: 'Project', href: '#' },
-  { name: 'Event', href: '#' },
-  { name: 'Blog', href: '#' },
-  { name: 'Contact us', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'About us', href: '/#about' },
+  { name: 'Project', href: '/projects' },
+  { name: 'Event', href: '/events' },
+  { name: 'Blog', href: '/blogs' },
+  { name: 'Contact us', href: '/#Contact' },
 ]
 
 export default function Header() {
@@ -43,7 +43,7 @@ export default function Header() {
             ))}
           </div>
           <div className="hidden ml-12 lg:flex " >
-            <a href="#" className="text-sm font-semibold leading-6 text-white border-2 border-black-500 px-3 py-1.5 rounded-lg  bg-indigo-600 hover:bg-indigo-500 ">
+            <a href="volunteer" className="text-sm font-semibold leading-6 text-white border-2 border-black-500 px-3 py-1.5 rounded-lg  bg-indigo-600 hover:bg-indigo-500 ">
               Get Involved <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -85,7 +85,7 @@ export default function Header() {
                 <div className="py-6 ">
                   
                   <a
-                    href="#"
+                    href="/volunteer"
                     className="-mx-2 block rounded-lg px-2 py-2.5 text-base font-semibold leading-7  hover:bg-indigo-500   text-white border-2 border-black-500   bg-indigo-600"
                   >
                     <span className="flex justify-center">Get Involved &nbsp;<span aria-hidden="true">&rarr;</span></span>

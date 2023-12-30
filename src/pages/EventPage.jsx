@@ -1,5 +1,5 @@
 import eventPhoto from "../assets/event-1.jpg"
-
+import Header from "../components/Header";
 const events =[
     {
         "id":1,
@@ -22,13 +22,42 @@ const events =[
         "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
         "image":eventPhoto,
     },
+    {
+        "id":4,
+        "date":"Sept 10,2018",
+        "title":"World Wide Donation",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":eventPhoto,
+    },
+    {
+        "id":5,
+        "date":"Sept 10,2018",
+        "title":"World Wide Donation",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":eventPhoto,
+    },
+    {
+        "id":6,
+        "date":"Sept 10,2018",
+        "title":"World Wide Donation",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":eventPhoto,
+    },
+    {
+        "id":7,
+        "date":"Sept 10,2018",
+        "title":"World Wide Donation",
+        "subtitle":"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+        "image":eventPhoto,
+    },
     
 ];
-export default function Event(){
+export default function EventPage(){
     return(
         <>
-            <div className="my-8 ml-0 lg:ml-14 mt-44 ">
-                <h3 className="mb-8 text-2xl font-bold text-center text-gray-900 trackinlg-tight lg:text-4xl lg:text-start">
+            <Header/>
+            <div className="pt-16 my-8 ml-14">
+                <h3 className="mb-8 text-2xl font-bold text-center text-gray-900 trackinlg-tight lg:text-4xl">
             Events</h3>
             <div className="mt-1 mb-12 lg:grid-cols-3 lg:grid md:grid-cols-2 md:grid">
             {
@@ -55,14 +84,7 @@ export default function Event(){
                 })
             }
             </div>
-               <div className="mt-0 ml-44 lg:mr-24 lg:float-right lg:ml-0 md:ml-96"> 
-                    <a
-                    href="/events"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                   More <span aria-hidden="true">&rarr;</span>
-                    </a>
-                </div>
+              
             </div>
             
         </>

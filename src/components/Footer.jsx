@@ -1,11 +1,11 @@
 import { MapPinIcon,PhoneIcon,EnvelopeIcon } from '@heroicons/react/24/outline'
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'About us', href: '#' },
-    { name: 'Project', href: '#' },
-    { name: 'Event', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Contact us', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'About us', href: '/#about' },
+    { name: 'Project', href: '/projects' },
+    { name: 'Event', href: '/events' },
+    { name: 'Blog', href: '/blogs' },
+    { name: 'Contact us', href: '/#Contact' },
   ]
   
 export default function Footer(){
@@ -13,15 +13,15 @@ export default function Footer(){
         
         <div className="text-white bg-zinc-800 h-96">
             <div className="flex items-center justify-around p-16">
-                <div>
+                <div className="hidden lg:block">
                     <h3 className="mb-4 text-xl font-semibold underline underline-offset-8 trackinlg-tight lg:text-2xl">
                     About us</h3>
-                    <span className="inline-block w-64 font-semibold text-gray-400">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                    <span className="inline-block w-64 text-sm font-semibold text-gray-400 sm:text-base">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                     </span>
                 </div>
                 
-                <div>
+                <div className="hidden lg:block">
                     <h3 className="mb-4 text-xl font-semibold underline underline-offset-8 trackinlg-tight lg:text-2xl">
                     Site Links</h3>
                     <div className="flex flex-col gap-2">

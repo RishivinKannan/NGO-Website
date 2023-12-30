@@ -4,7 +4,7 @@ export default function HeroSection() {
     
     return (
         <>
-        <div className="w-screen h-screen bg-white">
+        <div id="home" className="w-screen h-screen bg-white">
         <div className="absolute w-full h-full -z-5">
           <img src={logo} className="object-cover w-full h-full grayscale-[50%]"/>
         </div>
@@ -22,7 +22,7 @@ export default function HeroSection() {
           />
         </div>
         
-        <div className="z-50 max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
+        <div className="z-50 flex items-center justify-center max-w-2xl py-32 mx-auto sm:py-72 lg:py-56 h-100vh">
           
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">

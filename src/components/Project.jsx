@@ -25,11 +25,11 @@ const projects =[
     },
     
 ];
-export default function Event(){
+export default function Project(){
     return(
         <>
-            <div className="my-8 ml-8">
-                <h3 className="mb-8 text-2xl font-bold text-gray-900 trackinlg-tight lg:text-4xl">
+            <div className="my-8 mt-32 ml-0 lg:ml-14" >
+                <h3 className="mb-8 text-2xl font-bold text-center text-gray-900 trackinlg-tight lg:text-4xl lg:text-start">
             Projects</h3>
             <div className="mt-1 mb-12 lg:grid-cols-3 lg:grid md:grid-cols-2 md:grid">
             {
@@ -52,7 +52,7 @@ export default function Event(){
             </div>
                <div className="mt-0 ml-44 lg:mr-24 lg:float-right lg:ml-0 md:ml-96"> 
                     <a
-                    href="#"
+                    href="/projects"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                    More <span aria-hidden="true">&rarr;</span>
