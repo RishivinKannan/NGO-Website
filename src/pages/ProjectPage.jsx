@@ -73,10 +73,11 @@ export default function Project(){
     return(
         <>
             <Header/>
-            <div className="pt-16 my-8 ml-14">
+            <div className="pt-16 my-8 ml-8 lg:ml-14">
             <div className="flex items-center justify-between mr-24">
-                <h3 className="mb-8 text-2xl font-bold text-center text-gray-900 trackinlg-tight lg:text-4xl">
+                <h3 className="ml-12 text-2xl font-bold text-center text-gray-900 lg:mb-8 trackinlg-tight lg:text-4xl lg:ml-0">
             Projects</h3>
+            
             <Menu >
                 <Menu.Button className=" inline-block rounded-lg px-4 py-2.5 text-base font-semibold leading-7  hover:bg-indigo-500   text-white border-2 border-black-500   bg-indigo-600 ">
                     Fliter

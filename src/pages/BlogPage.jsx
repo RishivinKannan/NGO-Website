@@ -69,7 +69,7 @@ export default function BlogPage (){
     return(
         <>
             <Header/>
-            <div className="pt-16 my-8 ml-14">
+            <div className="pt-16 my-8 ml-8 lg:ml-14">
                 <h3 className="mb-8 text-2xl font-bold text-center text-gray-900 trackinlg-tight lg:text-4xl">
             Blogs</h3>
             <div className="mt-8 lg:grid-cols-3 lg:grid md:grid-cols-2 md:grid">
